@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Galeria de fotos</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-slides>
+    <ion-slide *ngFor="let photo of photos">
+      <img [src]="photo.photo_url" />
+    </ion-slide>
+  </ion-slides>
+</ion-content>
